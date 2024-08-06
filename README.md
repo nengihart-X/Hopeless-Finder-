@@ -1,4 +1,4 @@
-Arbitrage Opportunity Finder
+<h1><b>Arbitrage Opportunity Finder</b></h1>
 
 This project continuously monitors cryptocurrency prices across various exchanges and identifies arbitrage opportunities. When an arbitrage opportunity is found, it sends an email notification to the specified recipients.
 Features
@@ -8,7 +8,7 @@ Features
     Sends email notifications when opportunities are found
     Caches API responses to minimize redundant requests and avoid rate limits
 
-Setup
+<B>Setup</b>
 Prerequisites
 
     Python 3.6+
@@ -49,7 +49,7 @@ Main Components
     get_prices_from_exchange: Fetches cryptocurrency prices from CoinGecko and caches the results.
     find_arbitrage_opportunities: Finds arbitrage opportunities by comparing prices across different exchanges and sends email notifications.
 
-Logging
+<b>Logging</b>
 
 The script uses Python's built-in logging module to log various information, including API responses, cache usage, identified arbitrage opportunities, and email sending status.
 Contributing

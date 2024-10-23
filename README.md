@@ -1,60 +1,62 @@
-<h1><b>Arbitrage Opportunity Finder</b></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopeless Finder</title>
+</head>
+<body>
+    <h1>Hopeless Finder</h1>
+    <p><strong>Hopeless Finder</strong> is a Python script that tracks arbitrage opportunities across various cryptocurrencies using real-time data from the CoinGecko API. The script fetches current buy and sell prices from multiple exchanges, analyzes potential profit margins, and alerts you when viable arbitrage opportunities arise.</p>
 
-This project continuously monitors cryptocurrency prices across various exchanges and identifies arbitrage opportunities. When an arbitrage opportunity is found, it sends an email notification to the specified recipients.
-Features
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Arbitrage Alerts</strong>: Notifies you of profitable buy and sell opportunities for supported cryptocurrencies.</li>
+        <li><strong>Supported Coins</strong>: Currently tracks Bitcoin (BTC), Ethereum (ETH), Tether (USDT), Solana (SOL), USD Coin (USDC), Ripple (XRP), Dogecoin (DOGE), Binance Coin (BNB), and Tron (TRX).</li>
+        <li><strong>Configurable Parameters</strong>: Adjust trading fees, network fees, and profit thresholds.</li>
+    </ul>
 
-    Fetches cryptocurrency prices from CoinGecko
-    Identifies arbitrage opportunities by comparing prices across different exchanges
-    Sends email notifications when opportunities are found
-    Caches API responses to minimize redundant requests and avoid rate limits
+    <h2>Requirements</h2>
+    <p>To run the script, you need Python 3.7 or higher. The following libraries must be installed:</p>
+    <ul>
+        <li><code>aiohttp</code></li>
+        <li><code>logging</code> (part of the standard library)</li>
+        <li><code>datetime</code> (part of the standard library)</li>
+        <li><code>time</code> (part of the standard library)</li>
+    </ul>
+    <p>You can install the required external libraries using the following command:</p>
+    <pre><code>pip install -r requirements.txt</code></pre>
 
-<B>Setup</b>
-Prerequisites
+    <h2>Usage</h2>
+    <ol>
+        <li><strong>Clone the Repository</strong>:
+            <pre><code>git clone https://github.com/nengihart-X/Hopeless-Finder.git
+cd hopeless-finder</code></pre>
+        </li>
+        <li><strong>Install Dependencies</strong>:
+            Ensure you have all required packages by running:
+            <pre><code>pip install -r requirements.txt</code></pre>
+        </li>
+        <li><strong>Run the Script</strong>:
+            Execute the script to start tracking arbitrage opportunities:
+            <pre><code>python hopelessfinder.py</code></pre>
+        </li>
+        <li><strong>View Alerts</strong>: 
+            The script will print alerts in the console for any viable arbitrage opportunities, detailing buy and sell prices, net profit, and profit margins.
+        </li>
+    </ol>
 
-    Python 3.6+
-    SendGrid API Key (for sending email notifications)
+    <h2>Handling Errors</h2>
+    <p><strong>HTTP Status 429 (Too Many Requests)</strong>: This error indicates that the API request limit has been exceeded. You may need to reduce the frequency of requests or wait for some time before retrying.</p>
 
+    <h2>Contributing</h2>
+    <p>Contributions are welcome! Feel free to open issues or submit pull requests for improvements and bug fixes.</p>
 
+    <h2>License</h2>
+    <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
 
-Set up environment variables for the SendGrid API Key:
-
-bash
-
-export SENDGRID_API_KEY='your_sendgrid_api_key'
-export SENDGRID_SENDER_EMAIL='your_verified_sender_email'
-
-Replace VERIFIED_EMAILS with your verified email addresses in the code:
-
-python
-
-    VERIFIED_EMAILS = ['email1@example.com', 'email2@example.com']
-
-Usage
-
-Run the script:
-
-bash
-
-python arbitrage_opportunity_finder.py
-
-The script will start searching for arbitrage opportunities and send email notifications to the specified recipients when opportunities are found.
-Code Overview
-Main Components
-
-    send_email_notification: Sends an email notification using SendGrid.
-    get_coins_from_coingecko: Returns a dictionary of supported coins and their CoinGecko IDs.
-    get_exchanges_from_coingecko: Returns a dictionary of supported exchanges and their names.
-    cache_data: Caches API responses to minimize redundant requests.
-    get_cached_data: Retrieves cached data if available and not expired.
-    get_prices_from_exchange: Fetches cryptocurrency prices from CoinGecko and caches the results.
-    find_arbitrage_opportunities: Finds arbitrage opportunities by comparing prices across different exchanges and sends email notifications.
-
-<b>Logging</b>
-
-The script uses Python's built-in logging module to log various information, including API responses, cache usage, identified arbitrage opportunities, and email sending status.
-Contributing
-
-Feel free to contribute to the project by submitting issues or pull requests.
-License
-
-This project is licensed under the MIT License.
+    <h2>Acknowledgments</h2>
+    <p><a href="https://www.coingecko.com/en/api">CoinGecko API</a> for providing cryptocurrency data.</p>
+</body>
+</html>
+e.

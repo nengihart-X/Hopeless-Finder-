@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hopeless Finder</title>
-</head>
+    
 <body>
     <h1>Hopeless Finder</h1>
     <p><strong>Hopeless Finder</strong> is a Python script that tracks arbitrage opportunities across various cryptocurrencies using real-time data from the CoinGecko API. The script fetches current buy and sell prices from multiple exchanges, analyzes potential profit margins, and alerts you when viable arbitrage opportunities arise.</p>
 
-    <h2>Features</h2>
-    <ul>
+    Features
+    
         <li><strong>Arbitrage Alerts</strong>: Notifies you of profitable buy and sell opportunities for supported cryptocurrencies.</li>
         <li><strong>Supported Coins</strong>: Currently tracks Bitcoin (BTC), Ethereum (ETH), Tether (USDT), Solana (SOL), USD Coin (USDC), Ripple (XRP), Dogecoin (DOGE), Binance Coin (BNB), and Tron (TRX).</li>
         <li><strong>Configurable Parameters</strong>: Adjust trading fees, network fees, and profit thresholds.</li>

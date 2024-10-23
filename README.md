@@ -31,11 +31,11 @@ Usage
 
     Clone the Repository:
 
-    bash
+    
 
 git clone https://github.com/nengihart-X/Hopeless-Finder.gitChange Directory:
 
-bash
+
 
 cd hopeless-finder
 

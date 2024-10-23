@@ -33,7 +33,10 @@ Usage
 
     
 
-git clone https://github.com/nengihart-X/Hopeless-Finder.gitChange Directory:
+git clone https://github.com/nengihart-X/Hopeless-Finder.git
+
+
+Directory:
 
 
 
